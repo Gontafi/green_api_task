@@ -4,10 +4,7 @@ function getRequest(url) {
     fetch(url)
         .then(response => {
             console.log(response);
-            if (response.ok) {
-                return response.json();
-            }
-            throw new Error('Network response was not ok.');
+            return response.json();
         })
         .then(data => {
             document.getElementById("output_json").innerHTML = JSON.stringify(data, undefined, 2);
@@ -48,10 +45,7 @@ function sendMessage() {
         })
     }).then(response => {
         console.log(response);
-        if (response.ok) {
-            return response.json();
-        }
-        throw new Error('Network response was not ok.');
+        return response.json();
     }).then(data => {
         document.getElementById("output_json").innerHTML = JSON.stringify(data, undefined, 2);
     }).catch(error => {
@@ -97,10 +91,7 @@ function sendFileByUrl() {
                 })
             }).then(response => {
                 console.log(response);
-                if (response.ok) {
-                    return response.json();
-                }
-                throw new Error('Network response was not ok.');
+                return response.json();
             }).then(data => {
                 document.getElementById("output_json").innerHTML = JSON.stringify(data, undefined, 2);
             }).catch(error => {
