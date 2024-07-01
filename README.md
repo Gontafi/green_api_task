@@ -35,7 +35,7 @@
 
 ## Инструкция
 
-1. **Clone the repository:**
+1. **Сколируйте репозитории:**
 
     ```sh
     git clone https://github.com/Gontafi/green_api_task
@@ -44,7 +44,7 @@
 2. **Создать .env файл из примера .env.example(скопируйте api от своего личного кабинета)**
 
 
-3. **Build and run the application:**
+3. **Запустите проект:**
 
     ```sh
     go run main.go
