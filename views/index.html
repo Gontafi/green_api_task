@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green API Test</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+<div class="box">
+    <div class="settings">
+        <div class="id_instance">
+            <input id="id_instance" placeholder="idInstance">
+        </div>
+        <div class="api_token">
+            <input id="api_token" placeholder="ApiTokenInstance">
+        </div>
+        <div class="getters_button">
+            <button onclick="getSettings()">getSettings</button>
+            <button onclick="getStateInstance()">getStateInstance</button>
+        </div>
+        <div class="send_message">
+            <input id="number_msg" placeholder="77771234567">
+            <input id="message" placeholder="Hello World!">
+            <button onclick="sendMessage()">sendMessage</button>
+        </div>
+        <div class="send_file">
+            <input id="number_msg_file" placeholder="77771234567">
+            <input id="file_url" placeholder="https://my.site.com/img/horse.png">
+            <button onclick="sendFileByUrl()">sendFileByUrl</button>
+        </div>
+    </div>
+    <div class="output">
+        <pre id="output_json">Your output</pre>
+    </div>
+</div>
+<script src="./static/main.js"></script>
+</body>
+</html>
